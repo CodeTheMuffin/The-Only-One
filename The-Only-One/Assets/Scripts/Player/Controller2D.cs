@@ -21,18 +21,16 @@ public class Controller2D : MonoBehaviour
     float vertical;
     float moveLimiter = 0.71f; //~ sqrt(2)/2 
     Vector3 change;
-    Vector2 direction;
+    Vector3 direction;
     private Animator animator;
 
     public float WalkSpeed = 10.0f;
     public float RunSpeed = 15.0f;
 
-    void Start()
-    {
-        body = GetComponent<Rigidbody2D>();
-        animator = GetComponent < Animator >();
-        direction = new Vector2(0,0);
-        /*
+    public float KickingRange = 10;
+    CircleCollider2D KickCollider;
+
+    /*
          * let sqrt(2)/2 be Z which is ~0.707 or 0.71
          * 
          * 
@@ -42,6 +40,13 @@ public class Controller2D : MonoBehaviour
                 Looking SW (-Z,-Z)               Looking SE (Z,-Z)
                              Looking down (0,-1)
          */
+
+    void Start()
+    {
+        body = GetComponent<Rigidbody2D>();
+        KickCollider = GetComponent<CircleCollider2D>();
+        animator = GetComponent < Animator >();
+        direction = new Vector2(0,0);
     }
 
     /*void Update()
@@ -60,7 +65,7 @@ public class Controller2D : MonoBehaviour
     }*/
 
 
-    void Update()
+    void FixedUpdate()
     {
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
@@ -73,27 +78,39 @@ public class Controller2D : MonoBehaviour
     {
         if (change != Vector3.zero)//
         {
-            MoveCharacter();
+            if (!Input.GetButton("Fire4") && Input.GetAxis("Fire4")==0)//if not holding down the [left Ctrl] OR [B button]
+            {//then move
+                MoveCharacter(true);
+                animator.SetBool("isWalking", true);
 
-            if (change.x != 0 && change.y != 0) // Check for diagonal movement
-            {
-                change.x *= moveLimiter;
-                change.y *= moveLimiter;
             }
-            // limit movement speed diagonally, so you move at 71% speed
-
-            animator.SetBool("isWalking", true);
+            else // stay in place but move in different direction
+            {
+                MoveCharacter(false);
+                animator.SetBool("isWalking", false);
+            }
+            
         }
-        else
+        else //not moving at all
         {
+            body.velocity = Vector2.zero;
             animator.SetBool("isWalking", false);
         }
     }
 
 
-    void MoveCharacter()
+    void MoveCharacter(bool isWalking)
     {
-        body.MovePosition(   transform.position + change * WalkSpeed *Time.deltaTime );
+        if (change.x != 0 && change.y != 0) // Check for diagonal movement
+        {
+            change.x *= moveLimiter;
+            change.y *= moveLimiter;
+        }
+        // limit movement speed diagonally, so you move at 71% speed
+        if (isWalking)
+        {
+            body.MovePosition(transform.position + change * WalkSpeed * Time.deltaTime);
+        }
         animator.SetFloat("moveX", change.x);
         animator.SetFloat("moveY", change.y);
     }
@@ -107,6 +124,10 @@ public class Controller2D : MonoBehaviour
         
     }
 
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
+    }
 
     /*
     private void FixedUpdate()

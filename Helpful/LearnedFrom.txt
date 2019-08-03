@@ -1,0 +1,7 @@
+Shader graphs
+Need to install packages:
+Window -> Package Manager -> Lightweight RP
+Window -> Package Manager -> Shader Graph
+
+https://www.youtube.com/watch?v=UxmIC92BqfA
+https://answers.unity.com/questions/1535235/shader-graph-error-the-current-render-pipeline-is.html
