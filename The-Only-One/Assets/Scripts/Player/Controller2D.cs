@@ -27,7 +27,8 @@ public class Controller2D : MonoBehaviour
     public float WalkSpeed = 10.0f;
     public float RunSpeed = 15.0f;
 
-    public float KickingRange = 10;
+    //[Range(5f, 50f)]
+    //public float KickingRange = 10;
     CircleCollider2D KickCollider;
 
     public List<Rigidbody2D> employee_bodies_in_contact;
@@ -35,11 +36,17 @@ public class Controller2D : MonoBehaviour
     public bool ReadyToAttack = false;
 
     [Range(0.0f, 100.0f)]
-    public float KickForce = 10.0f;
+    public float KickForce = 20.0f;
 
     //to resemble the angle at which the player is allowed to kick the targetwhile facing a certain direction
     [Range(15f, 180f)]
     public float AngleOfAttack = 90.0f;//this will be split in half. As default, +/- 45 degrees from direction playe is facing
+
+    public LayerMask TargetMask, ObstacleMask;
+    
+    public float MAX_kick_time = 0.8f;//1 second
+    public float kicking_time = 0;
+    public Kick_Progress_UI kicking_script;
 
     /*
          * let sqrt(2)/2 be Z which is ~0.707 or 0.71
@@ -56,13 +63,17 @@ public class Controller2D : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         KickCollider = GetComponent<CircleCollider2D>();
+        //KickCollider.radius = KickingRange;
+
         animator = GetComponent < Animator >();
 
+        //forces animation and direction to start the same way.
         direction = new Vector2(0, -1);
         animator.SetFloat("moveX", direction.x);
         animator.SetFloat("moveY", direction.y);
         
         employee_bodies_in_contact = new List<Rigidbody2D>();
+        kicking_script.StopWaiting();
     }
 
     /*void Update()
@@ -80,7 +91,7 @@ public class Controller2D : MonoBehaviour
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }*/
 
-
+    
     void FixedUpdate()
     {
         change = Vector3.zero;
@@ -137,7 +148,7 @@ public class Controller2D : MonoBehaviour
 
     void Attack()
     {
-        if (ReadyToAttack )//&& Input.GetButton("Fire2"))
+        if (kicking_time <= 0.0f)//if (ReadyToAttack)//&& Input.GetButton("Fire2"))
         {
             //Debug.Log("X pressed.");
 
@@ -160,12 +171,12 @@ public class Controller2D : MonoBehaviour
                 float anime_y = direction.y;
 
                 float animation_angle = Mathf.Atan(anime_y / anime_x) * Mathf.Rad2Deg;
-                
+
                 //since origin of animation is (0,0), no need to subtract the value to find the difference between target value and origin. 
                 //delta y = moveY - origin = moveY- 0= moveY  <-- See!! Same for delta X
 
                 //Debug.Log("Current angle: " + angle );
-                
+
                 float x1 = transform.position.x;
                 float y1 = transform.position.y;
 
@@ -202,8 +213,8 @@ public class Controller2D : MonoBehaviour
                 // Need to divide the radius by 2, because it acts like a diameter. When you have 'gizmo' active on play mode, 
                 //  you can see that the line is pass the radius of the circle.... 
                 //This will resemble the direction the player is looking towards.
-                float anime_angle_x = Mathf.Cos(animation_angle * Mathf.Deg2Rad) * KickCollider.radius/2; //the radius is the magnitude
-                float anime_angle_y = Mathf.Sin(animation_angle * Mathf.Deg2Rad) * KickCollider.radius/2; //the radius is the magnitude
+                float anime_angle_x = Mathf.Cos(animation_angle * Mathf.Deg2Rad) * KickCollider.radius / 2; //the radius is the magnitude
+                float anime_angle_y = Mathf.Sin(animation_angle * Mathf.Deg2Rad) * KickCollider.radius / 2; //the radius is the magnitude
                 Debug.DrawLine(transform.position, new Vector2(anime_angle_x + x1, anime_angle_y + y1), Color.cyan);
 
                 //this will resemble direction the player is looking towards PLUS AngleOfAttack/2
@@ -211,26 +222,36 @@ public class Controller2D : MonoBehaviour
                 //float anime_angle_x1 = Mathf.Cos(((animation_angle + (AngleOfAttack / 2) ) % 360 ) * Mathf.Deg2Rad) * KickCollider.radius; //the radius is the magnitude
                 //float anime_angle_y1 = Mathf.Sin(((animation_angle + (AngleOfAttack / 2) ) % 360 ) * Mathf.Deg2Rad) * KickCollider.radius; //the radius is the magnitude
                 float animation_angle_A = animation_angle + (AngleOfAttack / 2);
-                float anime_angle_xA = Mathf.Cos(animation_angle_A * Mathf.Deg2Rad) * KickCollider.radius/2; //the radius is the magnitude
-                float anime_angle_yA = Mathf.Sin(animation_angle_A * Mathf.Deg2Rad) * KickCollider.radius/2; //the radius is the magnitude
+                float anime_angle_xA = Mathf.Cos(animation_angle_A * Mathf.Deg2Rad) * KickCollider.radius / 2; //the radius is the magnitude
+                float anime_angle_yA = Mathf.Sin(animation_angle_A * Mathf.Deg2Rad) * KickCollider.radius / 2; //the radius is the magnitude
                 Debug.DrawLine(transform.position, new Vector2(anime_angle_xA + x1, anime_angle_yA + y1), Color.magenta);
 
                 //this will resemble direction the player is looking towards MINUS AngleOfAttack/2
                 float animation_angle_B = animation_angle - (AngleOfAttack / 2);
-                float anime_angle_xB = Mathf.Cos(animation_angle_B * Mathf.Deg2Rad) * KickCollider.radius/2; //the radius is the magnitude
-                float anime_angle_yB = Mathf.Sin(animation_angle_B * Mathf.Deg2Rad) * KickCollider.radius/2; //the radius is the magnitude
+                float anime_angle_xB = Mathf.Cos(animation_angle_B * Mathf.Deg2Rad) * KickCollider.radius / 2; //the radius is the magnitude
+                float anime_angle_yB = Mathf.Sin(animation_angle_B * Mathf.Deg2Rad) * KickCollider.radius / 2; //the radius is the magnitude
                 Debug.DrawLine(transform.position, new Vector2(anime_angle_xB + x1, anime_angle_yB + y1), Color.yellow);
 
                 if (angle <= animation_angle_A && angle >= animation_angle_B)
                 {
-                    Debug.DrawLine(transform.position, targetBody.transform.position, Color.red);
+                    float distToTarget = Vector2.Distance(transform.position, targetBody.transform.position);
 
-                    targetBody.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = true;//show outline on target
-                    if (Input.GetButton("Fire2"))
+                    //shoot a raycast out and if there is nothing blocking it, hit the target.
+                    if (!Physics2D.Raycast(transform.position, dirr.normalized, distToTarget, ObstacleMask))
                     {
-                        //targetBody.AddForce(new Vector2(anime_angle_x, anime_angle_y) * KickForce, ForceMode2D.Impulse);
-                        targetBody.AddForce(dirr*KickForce, ForceMode2D.Impulse);
-                        //targetBody.AddForce(new Vector2(-0.71f, 0.71f)*KickForce, ForceMode2D.Impulse);
+                        Debug.DrawLine(transform.position, targetBody.transform.position, Color.red);
+
+                        targetBody.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = true;//show outline on target
+                        if (Input.GetButton("Fire2"))
+                        {
+                            kicking_time = MAX_kick_time;
+                            ReadyToAttack = false;
+                            kicking_script.StartWaiting();
+
+                            Debug.DrawLine(transform.position, targetBody.transform.position, Color.white);
+                            //targetBody.AddForce(new Vector2(anime_angle_x, anime_angle_y) * KickForce, ForceMode2D.Impulse);
+                            targetBody.AddForce(dirr * KickForce, ForceMode2D.Impulse);
+                        }
                     }
                 }
                 else //if not within range
@@ -246,6 +267,23 @@ public class Controller2D : MonoBehaviour
 
                 //Debug.Log("Angle: " + angle + "\tAnime Angle: " + animation_angle);
                 //Debug.Log("origin: ( " + x1 + ",  " + y1 + " )\ttarget: ( " + x2 + ",  " + y2 + " )");
+            }
+        }
+        else
+        {
+            kicking_time -= Time.deltaTime;
+            kicking_script.setvalue(kicking_time, MAX_kick_time);
+
+            if (kicking_time < 0)
+            {
+                kicking_time = 0;
+                kicking_script.StopWaiting();
+            }
+                
+
+            foreach (Rigidbody2D targetBody in employee_bodies_in_contact)
+            {
+                targetBody.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = false;//show outline on target
             }
         }
     }

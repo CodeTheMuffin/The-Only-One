@@ -3,8 +3,15 @@ Need to install packages:
 Window -> Package Manager -> Lightweight RP
 Window -> Package Manager -> Shader Graph
 
+USED- as in almost 1:1 code
+====================
+
 https://www.youtube.com/watch?v=UxmIC92BqfA
 https://answers.unity.com/questions/1535235/shader-graph-error-the-current-render-pipeline-is.html
+
+Field of view visualisation (E01) (YouTube)
+by Sebastian Lague
+https://www.youtube.com/watch?v=rQG9aUWarwE
 
 ====================
 Asset:
@@ -14,6 +21,10 @@ by Legit Games
 https://assetstore.unity.com/packages/vfx/shaders/photoshop-like-2d-sprite-outline-stroke-effect-105207
 $20.00 USD
 
+Simple UI Elements
+by MadFireOn
+https://assetstore.unity.com/publishers/15797
+FREE
 
 
 potential:
@@ -21,8 +32,9 @@ potential:
 https://itch.io/game-assets/free/genre-rpg?page=3
 
 Particle Package
+by Kenney
 https://www.kenney.nl/assets/particle-pack
-
+FREE
 
 
 ====================
@@ -56,6 +68,3 @@ Calculating Angles (YouTube)
 by GameDevHQ 
 https://www.youtube.com/watch?v=s-Ho5hF2Yww
 
-Field of view visualisation (E01) (YouTube)
-by Sebastian Lague
-https://www.youtube.com/watch?v=rQG9aUWarwE

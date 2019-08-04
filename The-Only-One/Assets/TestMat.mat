@@ -34,7 +34,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_77F67799:
-        m_Texture: {fileID: 2800000, guid: bad75d9012c1a1940b3c564428d3a75b, type: 3}
+        m_Texture: {fileID: 2800000, guid: b338cc716af380848ad4822bdb024aa3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AlphaTex:
@@ -87,7 +87,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - PixelSnap: 0
-    - Vector1_3D60B891: 0
+    - Vector1_3D60B891: 5
     - _AlphaClip: 0
     - _AlphaThreshold: 0.05
     - _Blend: 0
@@ -122,7 +122,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_A3EEE350: {r: 1, g: 0, b: 0, a: 0}
+    - Color_A3EEE350: {r: 0.7169812, g: 0.20630117, b: 0.20630117, a: 0}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

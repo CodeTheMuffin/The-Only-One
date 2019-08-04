@@ -17,7 +17,7 @@ TagManager:
   - Player
   - Background
   - Enemy
-  - 
+  - Obstacle
   - 
   - 
   - 
@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UI
+    uniqueID: 3128166899
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -50,4 +53,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 4165865679
+    locked: 0
+  - name: Obstacle
+    uniqueID: 729875221
     locked: 0
