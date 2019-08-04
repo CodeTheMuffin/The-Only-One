@@ -120,6 +120,164 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &11709463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 11709464}
+  - component: {fileID: 11709466}
+  - component: {fileID: 11709465}
+  - component: {fileID: 11709467}
+  - component: {fileID: 11709468}
+  - component: {fileID: 11709469}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &11709464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11709463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.53, y: -1.93, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1596566855}
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11709465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11709463}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847a14d4dc9cc43679ab34fc78e0182f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 2
+  repathRate: 0.5
+  canSearch: 1
+  canMove: 1
+  speed: 3
+  orientation: 1
+  enableRotation: 0
+  rotationSpeed: 0
+  interpolatePathSwitches: 1
+  switchPathInterpolationSpeed: 5
+  targetCompatibility: {fileID: 0}
+--- !u!114 &11709466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11709463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 1
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!114 &11709467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11709463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 434420146}
+--- !u!114 &11709468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11709463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 2
+  radius: 1
+  height: 0.01
+  repathRate: 0.5
+  canSearch: 1
+  canMove: 1
+  maxSpeed: 3
+  gravity: {x: 0, y: 0, z: 0}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  centerOffsetCompatibility: NaN
+  orientation: 1
+  enableRotation: 0
+  targetCompatibility: {fileID: 0}
+  maxAcceleration: -2.5
+  rotationSpeed: 360
+  slowdownDistance: 0.6
+  pickNextWaypointDist: 2
+  endReachedDistance: 0.2
+  alwaysDrawGizmos: 1
+  slowWhenNotFacingTarget: 1
+  whenCloseToDestination: 0
+  constrainInsideGraph: 1
+--- !u!50 &11709469
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11709463}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &38296811
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &38296812
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4871,7 +5029,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}
 --- !u!1 &88189650
 GameObject:
@@ -4971,6 +5129,80 @@ MonoBehaviour:
   KickColor: {r: 0, g: 0, b: 0, a: 0}
   MAX_text_wait: 0.4
   text_wait: 0
+--- !u!28 &89670839
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  serializedVersion: 2
+  m_Width: 46
+  m_Height: 56
+  m_CompleteImageSize: 10304
+  m_TextureFormat: 4
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_LightmapFormat: 0
+  m_ColorSpace: 0
+  image data: 10304
+  _typelessdata: cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff0e6eafff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff0e6eafff0e6eafff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff0e6eaeff0e6eaeff0e6eaeff0e6aaaff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff107bc6ff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eaeff0e6eaeff0e6eaeff0e6eafff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177bbfff177bbfff177bbfff177bbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff000000ff000000ff000000ff177bbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff000000ff000000ff000000ff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177dbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffff000000ff000000ff000000ffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffff000000ff000000ff000000ffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177bbfff177bbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177dbfff177dbfff177dbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
+--- !u!21 &97526649
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Outline
+  m_Shader: {fileID: 4800000, guid: 7449e1840806d044da6bfedbd5febcf2, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaThreshold: 0.05
+    - _BlurAlphaChoke: 1
+    - _BlurAlphaMultiplier: 0.7
+    - _BlurSize: 3
+    - _Buffer: 0
+    - _InvertBlur: 0
+    - _Size: 4
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &164866433
 GameObject:
   m_ObjectHideFlags: 0
@@ -9740,7 +9972,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &219511543
 GameObject:
@@ -9753,7 +9985,7 @@ GameObject:
   - component: {fileID: 219511546}
   - component: {fileID: 219511545}
   - component: {fileID: 219511544}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9847,7 +10079,7 @@ Transform:
   m_LocalScale: {x: 0.25, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &434420143
 GameObject:
@@ -9954,7 +10186,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &434420147
 MonoBehaviour:
@@ -9973,7 +10205,7 @@ MonoBehaviour:
   employee_bodies_in_contact: []
   employee_bodies_can_attack: []
   ReadyToAttack: 1
-  KickForce: 10
+  KickForce: 30
   AngleOfAttack: 140
   TargetMask:
     serializedVersion: 2
@@ -10062,7 +10294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &459861979
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -14796,9 +15028,9 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: -94.73399, y: -90, z: 89.99999}
---- !u!213 &485313932
+--- !u!213 &484618852
 Sprite:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14825,7 +15057,7 @@ Sprite:
   m_SpriteAtlas: {fileID: 0}
   m_RD:
     serializedVersion: 3
-    texture: {fileID: 1629023318}
+    texture: {fileID: 89670839}
     alphaTexture: {fileID: 0}
     secondaryTextures: []
     m_SubMeshes:
@@ -14916,7 +15148,7 @@ Sprite:
     downscaleMultiplier: 1
   m_AtlasRD:
     serializedVersion: 3
-    texture: {fileID: 1629023318}
+    texture: {fileID: 89670839}
     alphaTexture: {fileID: 0}
     secondaryTextures: []
     m_SubMeshes:
@@ -15237,93 +15469,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618380891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.49, y: -0.53, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 2.5, y: -1.5, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.5, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &621252210
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 100002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_Name
-      value: CharacterRobotBoy
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.771682
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.6654102
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_WhatIsGround.m_Bits
-      value: 55
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_AirControl
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 100004, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
 --- !u!1 &643492175
 GameObject:
   m_ObjectHideFlags: 0
@@ -15425,7 +15576,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &643492179
 BoxCollider2D:
@@ -15453,40 +15604,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
---- !u!21 &648814337
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Outline
-  m_Shader: {fileID: 4800000, guid: 7449e1840806d044da6bfedbd5febcf2, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlphaThreshold: 0.05
-    - _BlurAlphaChoke: 1
-    - _BlurAlphaMultiplier: 0.7
-    - _BlurSize: 3
-    - _Buffer: 0
-    - _InvertBlur: 0
-    - _Size: 4
-    m_Colors:
-    - _Color: {r: 0.8867924, g: 0.11294055, b: 0.11294055, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &670105488
 GameObject:
   m_ObjectHideFlags: 0
@@ -15592,7 +15709,7 @@ Transform:
   m_LocalScale: {x: 0.2125, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &693650917
 GameObject:
@@ -15676,7 +15793,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &693650920
 Rigidbody2D:
@@ -15762,7 +15879,13 @@ GameObject:
   - component: {fileID: 801500626}
   - component: {fileID: 801500625}
   - component: {fileID: 801500628}
+  - component: {fileID: 801500635}
   - component: {fileID: 801500629}
+  - component: {fileID: 801500632}
+  - component: {fileID: 801500631}
+  - component: {fileID: 801500630}
+  - component: {fileID: 801500633}
+  - component: {fileID: 801500634}
   m_Layer: 10
   m_Name: Player_Down_01
   m_TagString: Untagged
@@ -15864,7 +15987,7 @@ Transform:
   m_Children:
   - {fileID: 1236798851}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &801500628
 BoxCollider2D:
@@ -15873,7 +15996,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801500624}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -15913,6 +16036,145 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &801500630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801500624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 434420146}
+--- !u!114 &801500631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801500624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 2
+  radius: 1.25
+  height: 0.05
+  repathRate: 0.5
+  canSearch: 0
+  canMove: 0
+  maxSpeed: 7
+  gravity: {x: NaN, y: NaN, z: NaN}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  centerOffsetCompatibility: NaN
+  orientation: 1
+  enableRotation: 1
+  targetCompatibility: {fileID: 0}
+  maxAcceleration: -2.5
+  rotationSpeed: 360
+  slowdownDistance: 0.6
+  pickNextWaypointDist: 2
+  endReachedDistance: 0.2
+  alwaysDrawGizmos: 1
+  slowWhenNotFacingTarget: 0
+  whenCloseToDestination: 0
+  constrainInsideGraph: 1
+--- !u!114 &801500632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801500624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 0
+    exactEndPoint: 4
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!114 &801500633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801500624}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6a34d769a1e4ac7b0b30e433aa443c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  smoothType: 0
+  subdivisions: 2
+  iterations: 2
+  strength: 0.5
+  uniformLength: 1
+  maxSegmentLength: 2
+  bezierTangentLength: 0.4
+  offset: 0.2
+  factor: 0.1
+--- !u!114 &801500634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801500624}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b090bec917bbe4c3bbc612ef13f7c4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  useRaycasting: 1
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  thickRaycast: 1
+  thickRaycastRadius: 5
+  use2DPhysics: 1
+  raycastOffset: {x: 0, y: 0, z: 0}
+  useGraphRaycasting: 0
+  quality: 1
+--- !u!58 &801500635
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801500624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!1 &917990588
 GameObject:
   m_ObjectHideFlags: 0
@@ -16018,7 +16280,7 @@ Transform:
   m_LocalScale: {x: 200, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &926224045
 GameObject:
@@ -16116,46 +16378,174 @@ MonoBehaviour:
   KickColor: {r: 0.23369929, g: 0.8962264, b: 0.080322154, a: 1}
   MAX_text_wait: 1.5
   text_wait: 0
---- !u!28 &1065271793
-Texture2D:
+--- !u!1 &1095607978
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1095607980}
+  - component: {fileID: 1095607979}
+  - component: {fileID: 1095607981}
+  m_Layer: 9
+  m_Name: BackgroundGreyGridSprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1095607979
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095607978}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: cbbabe9e292f5604897926494bb38fef, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.5, y: 2.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1095607980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095607978}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.26, y: -12.7, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1095607981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095607978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
   m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  serializedVersion: 2
-  m_Width: 46
-  m_Height: 56
-  m_CompleteImageSize: 10304
-  m_TextureFormat: 4
-  m_MipCount: 1
-  m_IsReadable: 1
-  m_StreamingMipmaps: 0
-  m_StreamingMipmapsPriority: 0
-  m_AlphaIsTransparency: 0
-  m_ImageCount: 1
-  m_TextureDimension: 2
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_LightmapFormat: 0
-  m_ColorSpace: 0
-  image data: 10304
-  _typelessdata: cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff0e6eafff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff0e6eafff0e6eafff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff0e6eaeff0e6eaeff0e6eaeff0e6aaaff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff107bc6ff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eaeff0e6eaeff0e6eaeff0e6eafff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177bbfff177bbfff177bbfff177bbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff000000ff000000ff000000ff177bbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff000000ff000000ff000000ff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177dbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffff000000ff000000ff000000ffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffff000000ff000000ff000000ffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177bbfff177bbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177dbfff177dbfff177dbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAACYn+srLPq1RwIAAO0EAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VEtz2jAQ/iuMzqUDFAj01hJCeiAwIZ1cfBHSGmuQJY8e4TX8965kOzZ0cmLZ79vdbx/yhQhlC2BOm4URfKk5kJ8dEmzyrdOAz3CkO6024gw1511wlwUSjZxX6oRGfz+EWZ2DM4L9UjsZyD10eiVSbfI538FMW2fRnVJpASGjXYhW6Lp0yBF/utMQckJr8BCsM1rTXueKJgPlwDTUmljTSpZXTNK8AB4kN+RRzR6VNIXNVIwgnGkpha2UEHcqYqev9BT65IJiV7F04GYgdpkLCtuBqzS14Co5hp4ehcHhlBnJb11OLKd2X2r6oNKHGoPecBIFlVmX/xG6/QinRufPdeF+LxRxmWB7lMioda2Ztt2Pt8q9OlC5p1sJ7xmoF70w2iuOoDM+hHoLg8fm72dvswzYvvGXUu+cvvh6M6GHa2z/OJMi3wbo+7B0bKSOw457B4Nr+YOC41XYKgV6g4q/Ft7orn0+FfAkjHUIVV2qIG+rvQlUMo8zC914N9NGgWlnKEBR6U5rzOPul3iHfR31RMNLqapXWP0Aqum0vQ2917uD1vrwuSyb6cMSbLbyTgrVyhWAF5zTTCtVnpi9BUPUxpuUslbUzgt+e1lkup2MxpMxpKw/ooMh626n4yEMgI8fhoP+j/6ExNMTCrukcl3qrIaDS1NNcoVnVn8+OgtDi3jt3NDDQpxz3dInVKo3zACo1U0GCwZr4IPkcy5wPBtwTqi4bXJJiNRsDzz55Cex0fnRGZo0i0lIIT60C56EzOLnIiFXcv0HUEsDBBQAAAgIAACYn+sMvpHzbAAAAHcAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0rPQUVBKL0osyCgGChiCOKWZKSB2tJJlkoWpmYVZalqyoWmikUmybpKlmUmqUWqKmbmJkaGxoYVSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAJif6yss+rVHAgAA7QQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJif6wy+kfNsAAAAdwAAAAkAJAAAAAAAAAAAAAAAlAIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABLAwAAAAA=
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 1
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 100
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors:
+    - {r: 0, g: 0, b: 0, a: 0}
+  tagNames:
+  - Basic Ground
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 10
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1
 --- !u!1 &1188861622
 GameObject:
   m_ObjectHideFlags: 0
@@ -16317,7 +16707,7 @@ Transform:
   m_Children:
   - {fileID: 1339226639}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1236798850
 GameObject:
@@ -16367,7 +16757,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2013768438}
+  - {fileID: 97526649}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16388,7 +16778,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1962370206}
+  m_Sprite: {fileID: 484618852}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -16447,7 +16837,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 648814337}
+  - {fileID: 1511476478}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16468,7 +16858,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 485313932}
+  m_Sprite: {fileID: 1905245742}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -16479,6 +16869,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!21 &1511476478
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Outline
+  m_Shader: {fileID: 4800000, guid: 7449e1840806d044da6bfedbd5febcf2, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaThreshold: 0.05
+    - _BlurAlphaChoke: 1
+    - _BlurAlphaMultiplier: 0.7
+    - _BlurSize: 3
+    - _Buffer: 0
+    - _InvertBlur: 0
+    - _Size: 4
+    m_Colors:
+    - _Color: {r: 0.8867924, g: 0.11294055, b: 0.11294055, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1514640915
 GameObject:
   m_ObjectHideFlags: 0
@@ -16554,46 +16978,104 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514640915}
   m_CullTransparentMesh: 0
---- !u!28 &1629023318
-Texture2D:
+--- !u!1 &1596566854
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1596566855}
+  - component: {fileID: 1596566856}
+  - component: {fileID: 1596566857}
+  m_Layer: 0
+  m_Name: Player_Down_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1596566855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596566854}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 11709464}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1596566856
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596566854}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -7740028887098753028, guid: bad75d9012c1a1940b3c564428d3a75b,
+    type: 3}
+  m_Color: {r: 0.25219533, g: 1, b: 0.06132078, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.375, y: 3}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!58 &1596566857
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596566854}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Width: 46
-  m_Height: 56
-  m_CompleteImageSize: 10304
-  m_TextureFormat: 4
-  m_MipCount: 1
-  m_IsReadable: 1
-  m_StreamingMipmaps: 0
-  m_StreamingMipmapsPriority: 0
-  m_AlphaIsTransparency: 0
-  m_ImageCount: 1
-  m_TextureDimension: 2
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_LightmapFormat: 0
-  m_ColorSpace: 0
-  image data: 10304
-  _typelessdata: cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff0e6eafff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff0e6eafff0e6eafff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff0e6eaeff0e6eaeff0e6eaeff0e6aaaff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff107bc6ff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eaeff0e6eaeff0e6eaeff0e6eafff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177bbfff177bbfff177bbfff177bbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff000000ff000000ff000000ff177bbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff000000ff000000ff000000ff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177dbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffff000000ff000000ff000000ffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffff000000ff000000ff000000ffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177bbfff177bbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177dbfff177dbfff177dbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
+  m_Radius: 1.5
 --- !u!1 &1739754282
 GameObject:
   m_ObjectHideFlags: 0
@@ -16658,7 +17140,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1775498217
 GameObject:
@@ -16671,7 +17153,7 @@ GameObject:
   - component: {fileID: 1775498220}
   - component: {fileID: 1775498219}
   - component: {fileID: 1775498218}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: right_wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16765,8 +17247,48 @@ Transform:
   m_LocalScale: {x: 0.25, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!28 &1775582624
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  serializedVersion: 2
+  m_Width: 46
+  m_Height: 56
+  m_CompleteImageSize: 10304
+  m_TextureFormat: 4
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_LightmapFormat: 0
+  m_ColorSpace: 0
+  image data: 10304
+  _typelessdata: cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff0e6eafff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff0e6eafff0e6eafff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff0e6eaeff0e6eaeff0e6eaeff0e6aaaff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff107bc6ff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eaeff0e6eaeff0e6eaeff0e6eafff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177bbfff177bbfff177bbfff177bbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff000000ff000000ff000000ff177bbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff000000ff000000ff000000ff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177dbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffff000000ff000000ff000000ffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffff000000ff000000ff000000ffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177bbfff177bbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177dbfff177dbfff177dbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1845718012
 GameObject:
   m_ObjectHideFlags: 0
@@ -16778,7 +17300,7 @@ GameObject:
   - component: {fileID: 1845718015}
   - component: {fileID: 1845718014}
   - component: {fileID: 1845718013}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16872,9 +17394,9 @@ Transform:
   m_LocalScale: {x: 0.25, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!213 &1962370206
+--- !u!213 &1905245742
 Sprite:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16901,7 +17423,7 @@ Sprite:
   m_SpriteAtlas: {fileID: 0}
   m_RD:
     serializedVersion: 3
-    texture: {fileID: 1065271793}
+    texture: {fileID: 1775582624}
     alphaTexture: {fileID: 0}
     secondaryTextures: []
     m_SubMeshes:
@@ -16992,7 +17514,7 @@ Sprite:
     downscaleMultiplier: 1
   m_AtlasRD:
     serializedVersion: 3
-    texture: {fileID: 1065271793}
+    texture: {fileID: 1775582624}
     alphaTexture: {fileID: 0}
     secondaryTextures: []
     m_SubMeshes:
@@ -17084,40 +17606,6 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
---- !u!21 &2013768438
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Outline
-  m_Shader: {fileID: 4800000, guid: 7449e1840806d044da6bfedbd5febcf2, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlphaThreshold: 0.05
-    - _BlurAlphaChoke: 1
-    - _BlurAlphaMultiplier: 0.7
-    - _BlurSize: 3
-    - _Buffer: 0
-    - _InvertBlur: 0
-    - _Size: 4
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2042122935
 GameObject:
   m_ObjectHideFlags: 0
@@ -17210,7 +17698,7 @@ RectTransform:
   m_Children:
   - {fileID: 926224046}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

@@ -26,15 +26,28 @@ by MadFireOn
 https://assetstore.unity.com/publishers/15797
 FREE
 
-
-potential:
-
-https://itch.io/game-assets/free/genre-rpg?page=3
+NavMesh-Tutorial (GitHub)
+by Brackeys
+https://github.com/Brackeys/NavMesh-Tutorial
+FREE
 
 Particle Package
 by Kenney
 https://www.kenney.nl/assets/particle-pack
 FREE
+
+2D/3D PathFinder Full
+by Vijay Veluri
+https://assetstore.unity.com/packages/tools/ai/2d-3d-pathfinder-full-126951
+FREE
+
+
+potential:
+------------
+https://itch.io/game-assets/free/genre-rpg?page=3
+
+A* Pathfinding [FOR an OLD version of Unity v4.2.8]
+https://arongranberg.com/astar/docs/pathfinding-2d.php
 
 
 ====================
@@ -68,3 +81,6 @@ Calculating Angles (YouTube)
 by GameDevHQ 
 https://www.youtube.com/watch?v=s-Ho5hF2Yww
 
+HOW TO MAKE 2D PARTICLE EFFECTS - UNITY TUTORIAL (YouTube)
+by Blackthornprod
+https://www.youtube.com/watch?v=_z68_OoC_0o
