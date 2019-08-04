@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode]
-public class SpriteOutline : MonoBehaviour
+public class SpriteOutlineOLD : MonoBehaviour
 {
     public Color color = Color.white;
 

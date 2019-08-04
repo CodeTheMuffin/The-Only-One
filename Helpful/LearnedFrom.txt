@@ -5,3 +5,57 @@ Window -> Package Manager -> Shader Graph
 
 https://www.youtube.com/watch?v=UxmIC92BqfA
 https://answers.unity.com/questions/1535235/shader-graph-error-the-current-render-pipeline-is.html
+
+====================
+Asset:
+====================
+Photoshop-like 2D Sprite Outline / Stroke Effect 
+by Legit Games
+https://assetstore.unity.com/packages/vfx/shaders/photoshop-like-2d-sprite-outline-stroke-effect-105207
+$20.00 USD
+
+
+
+potential:
+
+https://itch.io/game-assets/free/genre-rpg?page=3
+
+Particle Package
+https://www.kenney.nl/assets/particle-pack
+
+
+
+====================
+Helpful links:
+====================
+Angles
+https://www.calculator.net/slope-calculator.html?type=1&x11=3&y11=5&x12=2&y12=1&x=77&y=23
+
+2D top down movement
+https://stuartspixelgames.com/2018/06/24/simple-2d-top-down-movement-unity-c/
+
+xbox one controller map
+https://answers.unity.com/storage/temp/116267-xbox-one-controller-map-for-unity3d.jpg
+
+xbox 360 controller layout
+http://wiki.unity3d.com/index.php?title=Xbox360Controller
+
+Animating top down sprites
+https://blog.redbluegames.com/animating-top-down-2d-games-in-unity-5e966b81790e
+
+Input Manager
+https://docs.unity3d.com/Manual/class-InputManager.html
+
+Convential Game Input Names
+https://docs.unity3d.com/Manual/ConventionalGameInput.html
+
+Sprite Outline 			[Didn't work for me]
+https://nielson.io/2016/04/2d-sprite-outlines-in-unity
+
+Calculating Angles (YouTube)
+by GameDevHQ 
+https://www.youtube.com/watch?v=s-Ho5hF2Yww
+
+Field of view visualisation (E01) (YouTube)
+by Sebastian Lague
+https://www.youtube.com/watch?v=rQG9aUWarwE

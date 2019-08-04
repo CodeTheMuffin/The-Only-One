@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -120,6 +120,250 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!21 &34918243
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Outline
+  m_Shader: {fileID: 4800000, guid: 7449e1840806d044da6bfedbd5febcf2, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaThreshold: 0.05
+    - _BlurAlphaChoke: 1
+    - _BlurAlphaMultiplier: 0.7
+    - _BlurSize: 3
+    - _Buffer: 0
+    - _InvertBlur: 0
+    - _Size: 4
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+--- !u!213 &94931076
+Sprite:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 46
+    height: 56
+  m_Offset: {x: 0, y: 0}
+  m_Border: {x: 0, y: 0, z: 0, w: 0}
+  m_PixelsToUnits: 16
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Extrude: 0
+  m_IsPolygon: 0
+  m_AtlasName: 
+  m_PackingTag: 
+  m_RenderDataKey:
+    00000000000000000000000000000000: 0
+  m_AtlasTags: []
+  m_SpriteAtlas: {fileID: 0}
+  m_RD:
+    serializedVersion: 3
+    texture: {fileID: 1809746789}
+    alphaTexture: {fileID: 0}
+    secondaryTextures: []
+    m_SubMeshes:
+    - serializedVersion: 2
+      firstByte: 0
+      indexCount: 6
+      topology: 0
+      baseVertex: 0
+      firstVertex: 0
+      vertexCount: 4
+      localAABB:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+    m_IndexBuffer: 000001000200020001000300
+    m_VertexData:
+      serializedVersion: 3
+      m_VertexCount: 4
+      m_Channels:
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 3
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 1
+        offset: 0
+        format: 0
+        dimension: 2
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      m_DataSize: 80
+      _typelessdata: 0000b8bf0000e03f000000000000b83f0000e03f000000000000b8bf0000e0bf000000000000b83f0000e0bf000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Bindpose: []
+    textureRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 46
+      height: 56
+    textureRectOffset: {x: 0, y: 0}
+    atlasRectOffset: {x: -1, y: -1}
+    settingsRaw: 0
+    uvTransform: {x: 16, y: 23, z: 16, w: 28}
+    downscaleMultiplier: 1
+  m_AtlasRD:
+    serializedVersion: 3
+    texture: {fileID: 1809746789}
+    alphaTexture: {fileID: 0}
+    secondaryTextures: []
+    m_SubMeshes:
+    - serializedVersion: 2
+      firstByte: 0
+      indexCount: 6
+      topology: 0
+      baseVertex: 0
+      firstVertex: 0
+      vertexCount: 4
+      localAABB:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+    m_IndexBuffer: 000001000200020001000300
+    m_VertexData:
+      serializedVersion: 3
+      m_VertexCount: 4
+      m_Channels:
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 3
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 1
+        offset: 0
+        format: 0
+        dimension: 2
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      m_DataSize: 80
+      _typelessdata: 0000b8bf0000e03f000000000000b83f0000e03f000000000000b8bf0000e0bf000000000000b83f0000e0bf000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Bindpose: []
+    textureRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 46
+      height: 56
+    textureRectOffset: {x: 0, y: 0}
+    atlasRectOffset: {x: -1, y: -1}
+    settingsRaw: 0
+    uvTransform: {x: 16, y: 23, z: 16, w: 28}
+    downscaleMultiplier: 1
+  m_PhysicsShape: []
+  m_Bones: []
+  m_SpriteID: 
 --- !u!1 &219511543
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +391,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 219511543}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8be6341e1ce3f4cec9902bc34f72d20a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -328,7 +572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434420143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.3373299}
+  m_LocalPosition: {x: 0.94, y: 4.11, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -349,6 +593,11 @@ MonoBehaviour:
   WalkSpeed: 10
   RunSpeed: 15
   KickingRange: 10
+  employee_bodies_in_contact: []
+  employee_bodies_can_attack: []
+  ReadyToAttack: 1
+  KickForce: 10
+  AngleOfAttack: 90
 --- !u!61 &434420148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -532,7 +781,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9cb7afe1a71d9548aef83f5d132d2ce, type: 3}
   m_Name: 
@@ -775,7 +1024,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 670105488}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8be6341e1ce3f4cec9902bc34f72d20a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -875,7 +1124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &693650918
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1005,12 +1254,175 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693650917}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fe5ab38b5e32184791c923b6cdc013c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 0.9987322, g: 1, b: 0, a: 1}
+--- !u!1 &801500624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 801500627}
+  - component: {fileID: 801500626}
+  - component: {fileID: 801500625}
+  - component: {fileID: 801500628}
+  - component: {fileID: 801500629}
+  m_Layer: 10
+  m_Name: Player_Down_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &801500625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801500624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0e230e81a2f3148b6986fcb2c57e81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 4
+  blurSize: 3
+  color: {r: 1, g: 1, b: 1, a: 1}
+  blurAlphaMultiplier: 0.7
+  blurAlphaChoke: 1
+  invertBlur: 0
+  alphaThreshold: 0.05
+  buffer: 0
+  includeChildren: 0
+  childLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  ignoreChildNames: []
+  sortMethod: 1
+  isAnimated: 1
+  useExportedFrame: 0
+  customFrameName: help
+  generatesOnStart: 0
+  generatesOnValidate: 1
+--- !u!212 &801500626
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801500624}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -7740028887098753028, guid: bad75d9012c1a1940b3c564428d3a75b,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.375, y: 3}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &801500627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801500624}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.79, y: 3.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1236798851}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &801500628
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801500624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.375, y: 3}
+    newSize: {x: 2.375, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.375, y: 3}
+  m_EdgeRadius: 0
+--- !u!50 &801500629
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801500624}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 5
+  m_LinearDrag: 8
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &917990588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1530,613 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1188861622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188861627}
+  - component: {fileID: 1188861626}
+  - component: {fileID: 1188861625}
+  - component: {fileID: 1188861624}
+  - component: {fileID: 1188861623}
+  m_Layer: 10
+  m_Name: Player_Down_01 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!50 &1188861623
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188861622}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 5
+  m_LinearDrag: 8
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &1188861624
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188861622}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.375, y: 3}
+    newSize: {x: 2.375, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.375, y: 3}
+  m_EdgeRadius: 0
+--- !u!114 &1188861625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188861622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0e230e81a2f3148b6986fcb2c57e81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 4
+  blurSize: 3
+  color: {r: 0.8867924, g: 0.11294055, b: 0.11294055, a: 1}
+  blurAlphaMultiplier: 0.7
+  blurAlphaChoke: 1
+  invertBlur: 0
+  alphaThreshold: 0.05
+  buffer: 0
+  includeChildren: 0
+  childLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  ignoreChildNames: []
+  sortMethod: 1
+  isAnimated: 1
+  useExportedFrame: 0
+  customFrameName: help
+  generatesOnStart: 0
+  generatesOnValidate: 1
+--- !u!212 &1188861626
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188861622}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -7740028887098753028, guid: bad75d9012c1a1940b3c564428d3a75b,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.375, y: 3}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1188861627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188861622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.3, y: 4.99, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1339226639}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1236798850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1236798851}
+  - component: {fileID: 1236798852}
+  m_Layer: 10
+  m_Name: Outline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1236798851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236798850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 801500627}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1236798852
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236798850}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 34918243}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1732104876}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.5, y: 3.125}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!28 &1284385535
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  serializedVersion: 2
+  m_Width: 46
+  m_Height: 56
+  m_CompleteImageSize: 10304
+  m_TextureFormat: 4
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_LightmapFormat: 0
+  m_ColorSpace: 0
+  image data: 10304
+  _typelessdata: cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff0e6eafff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff0e6eafff0e6eafff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff0e6eaeff0e6eaeff0e6eaeff0e6aaaff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff107bc6ff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eaeff0e6eaeff0e6eaeff0e6eafff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177bbfff177bbfff177bbfff177bbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff000000ff000000ff000000ff177bbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff000000ff000000ff000000ff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177dbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffff000000ff000000ff000000ffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffff000000ff000000ff000000ffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177bbfff177bbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177dbfff177dbfff177dbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
+--- !u!1 &1339226638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1339226639}
+  - component: {fileID: 1339226640}
+  m_Layer: 10
+  m_Name: Outline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1339226639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339226638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188861627}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1339226640
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339226638}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1442437478}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 94931076}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.5, y: 3.125}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!21 &1442437478
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Outline
+  m_Shader: {fileID: 4800000, guid: 7449e1840806d044da6bfedbd5febcf2, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaThreshold: 0.05
+    - _BlurAlphaChoke: 1
+    - _BlurAlphaMultiplier: 0.7
+    - _BlurSize: 3
+    - _Buffer: 0
+    - _InvertBlur: 0
+    - _Size: 4
+    m_Colors:
+    - _Color: {r: 0.8867924, g: 0.11294055, b: 0.11294055, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+--- !u!213 &1732104876
+Sprite:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 46
+    height: 56
+  m_Offset: {x: 0, y: 0}
+  m_Border: {x: 0, y: 0, z: 0, w: 0}
+  m_PixelsToUnits: 16
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Extrude: 0
+  m_IsPolygon: 0
+  m_AtlasName: 
+  m_PackingTag: 
+  m_RenderDataKey:
+    00000000000000000000000000000000: 0
+  m_AtlasTags: []
+  m_SpriteAtlas: {fileID: 0}
+  m_RD:
+    serializedVersion: 3
+    texture: {fileID: 1284385535}
+    alphaTexture: {fileID: 0}
+    secondaryTextures: []
+    m_SubMeshes:
+    - serializedVersion: 2
+      firstByte: 0
+      indexCount: 6
+      topology: 0
+      baseVertex: 0
+      firstVertex: 0
+      vertexCount: 4
+      localAABB:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+    m_IndexBuffer: 000001000200020001000300
+    m_VertexData:
+      serializedVersion: 3
+      m_VertexCount: 4
+      m_Channels:
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 3
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 1
+        offset: 0
+        format: 0
+        dimension: 2
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      m_DataSize: 80
+      _typelessdata: 0000b8bf0000e03f000000000000b83f0000e03f000000000000b8bf0000e0bf000000000000b83f0000e0bf000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Bindpose: []
+    textureRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 46
+      height: 56
+    textureRectOffset: {x: 0, y: 0}
+    atlasRectOffset: {x: -1, y: -1}
+    settingsRaw: 0
+    uvTransform: {x: 16, y: 23, z: 16, w: 28}
+    downscaleMultiplier: 1
+  m_AtlasRD:
+    serializedVersion: 3
+    texture: {fileID: 1284385535}
+    alphaTexture: {fileID: 0}
+    secondaryTextures: []
+    m_SubMeshes:
+    - serializedVersion: 2
+      firstByte: 0
+      indexCount: 6
+      topology: 0
+      baseVertex: 0
+      firstVertex: 0
+      vertexCount: 4
+      localAABB:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+    m_IndexBuffer: 000001000200020001000300
+    m_VertexData:
+      serializedVersion: 3
+      m_VertexCount: 4
+      m_Channels:
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 3
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 1
+        offset: 0
+        format: 0
+        dimension: 2
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      m_DataSize: 80
+      _typelessdata: 0000b8bf0000e03f000000000000b83f0000e03f000000000000b8bf0000e0bf000000000000b83f0000e0bf000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Bindpose: []
+    textureRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 46
+      height: 56
+    textureRectOffset: {x: 0, y: 0}
+    atlasRectOffset: {x: -1, y: -1}
+    settingsRaw: 0
+    uvTransform: {x: 16, y: 23, z: 16, w: 28}
+    downscaleMultiplier: 1
+  m_PhysicsShape: []
+  m_Bones: []
+  m_SpriteID: 
 --- !u!1 &1775498217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,7 +2164,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1775498217}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8be6341e1ce3f4cec9902bc34f72d20a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1225,6 +2244,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!28 &1809746789
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  serializedVersion: 2
+  m_Width: 46
+  m_Height: 56
+  m_CompleteImageSize: 10304
+  m_TextureFormat: 4
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_LightmapFormat: 0
+  m_ColorSpace: 0
+  image data: 10304
+  _typelessdata: cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff0e6eafff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff0e6eafff0e6eafff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eafff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff0e6eafff0e6eafff0e6eafff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff0e6eaeff0e6eaeff0e6eaeff0e6aaaff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eafff0e6eafff0e6eaeff0e6eaeff0e6eaeff0e6eaeff0e6eaeff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff107bc6ff0e6aaaff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff0e6eaeff0e6eaeff0e6eaeff0e6eafff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff000000ff000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177bbfff177bbfff177bbfff177bbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff000000ff000000ff000000ff177bbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff000000ff000000ff000000ff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177dbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffff000000ff000000ff000000ffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffff000000ff000000ff000000ffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177bbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177dbfff177dbfff000000ffffffffffffffffffffffffff000000ffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff177cbfff177cbfff177cbfff177cbfff177bbfff177bbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177dbfff177dbfff177dbfff177dbfff000000ffffffffffffffffffffffffffffffffffffffffff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff000000ff000000ffffffffffffffffffffffffff000000ff000000ff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ff000000ff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177dbfff177dbfff177dbfff177dbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff167cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff167cbfff167cbfff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff167cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff177cbfff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff167cbfff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ffcdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1845718012
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,7 +2311,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1845718012}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8be6341e1ce3f4cec9902bc34f72d20a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
