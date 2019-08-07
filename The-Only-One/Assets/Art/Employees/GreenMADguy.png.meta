@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: 5f363d7dcc5d4344286042b84177c458
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -399399314264863607
+    second: GreenMADguy_Down_01
+  - first:
+      213: -120065778997108853
+    second: GreenMADguy_Down_02
+  - first:
+      213: -7080548351487821060
+    second: GreenMADguy_Up
+  - first:
+      213: -7710910192554735844
+    second: GreenMADguy_Left_01
+  - first:
+      213: -3287028731642945356
+    second: GreenMADguy_Left_02
+  - first:
+      213: -9160002429252262711
+    second: GreenMADguy_Left_Down_01
+  - first:
+      213: 5820817768302224283
+    second: GreenMADguy_Left_Down_02
+  - first:
+      213: -4943808934551576378
+    second: GreenMADguy_Left_Up_01
+  - first:
+      213: 2876559589951190849
+    second: GreenMADguy_Left_Up_02
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +67,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -62,7 +89,19 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -72,7 +111,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GreenMADguy_Down_01
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 198
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5413ac501cc79944d92986e8b21f715f
+      internalID: -399399314264863607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMADguy_Down_02
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 198
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a288e56dd50f50418b446262cf7c217
+      internalID: -120065778997108853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMADguy_Up
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 198
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37e2319825ed064d9865fdcd9663eaa
+      internalID: -7080548351487821060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMADguy_Left_01
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 134
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224d7abe2f613374ca9c08cb6431d4d6
+      internalID: -7710910192554735844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMADguy_Left_02
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 134
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9ffd23c832be8408144a379f4cfa30
+      internalID: -3287028731642945356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMADguy_Left_Down_01
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 134
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd33a06d02abc53439d3d7e534b11927
+      internalID: -9160002429252262711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMADguy_Left_Down_02
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 70
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1a53b46db6ce044a077c699e953501
+      internalID: 5820817768302224283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMADguy_Left_Up_01
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 70
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a81a5994bfb6b42bc35652f4b8aee3
+      internalID: -4943808934551576378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenMADguy_Left_Up_02
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 70
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0ccfeb2db2479418cfec4aac4eb06d
+      internalID: 2876559589951190849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
